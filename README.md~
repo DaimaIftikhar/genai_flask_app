@@ -1,0 +1,27 @@
+# GenAI Flask App
+
+A lightweight Generative AI web application built using Flask that allows users to interact with an AI model through a simple, intuitive web interface. The goal of this project is to demonstrate how Large Language Models (LLMs) can be integrated into a Python backend and served through a clean UI.
+
+---
+
+## Overview
+
+This project showcases how Generative AI can be embedded into a full-stack web application using Flask. It includes a frontend powered by HTML/CSS/JavaScript and a backend API that handles user prompts, processes them through an AI model, and returns generated answers in real-time.
+
+This repository can be used as:
+- A starter template for AI web apps
+- A portfolio project for demonstrating AI integration
+- A learning resource for Flask beginners
+
+---
+
+## Features
+
+- Interactive chat-style interface
+- Flask backend with REST endpoints
+- AI text generation
+- Clean and minimalist UI
+- Easy setup and modular codebase
+- Template-based rendering (Jinja)
+
+---
