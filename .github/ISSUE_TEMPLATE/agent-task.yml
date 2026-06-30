@@ -1,0 +1,82 @@
+name: Agent Implementation Task
+description: Create a structured task for Claude or a developer
+title: "[Agent Task]: "
+labels:
+  - needs-triage
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Complete this form before marking a task as agent-ready.
+
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired Outcome
+      description: What should work when the task is complete?
+      placeholder: Describe the user or business outcome.
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Add relevant files, links, screenshots, errors, API details, or previous PRs.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What is Claude allowed to change?
+    validations:
+      required: true
+
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Out of Scope
+      description: What must not be changed?
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Write measurable requirements.
+      placeholder: |
+        - [ ] Requirement 1
+        - [ ] Requirement 2
+        - [ ] Edge case covered
+        - [ ] Existing behavior remains intact
+    validations:
+      required: true
+
+  - type: textarea
+    id: testing
+    attributes:
+      label: Testing Requirements
+      description: Define the expected tests and verification steps.
+      placeholder: |
+        - [ ] Unit tests added or updated
+        - [ ] Relevant test suite passes
+        - [ ] Lint and build pass
+        - [ ] Manual browser verification completed
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Task Confirmation
+      options:
+        - label: This task has no production deployment requirement.
+          required: true
+        - label: This task does not require secrets or production credentials.
+          required: true
+        - label: A human will review the PR before merge.
+          required: true
